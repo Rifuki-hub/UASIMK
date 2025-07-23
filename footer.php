@@ -26,7 +26,7 @@
                     <li><a href="#" class="text-white/70 hover:text-white">Kalkulator Pabean</a></li>
                 </ul>
             </div>
-            
+
             <!-- Informasi -->
             <div>
                 <h5 class="font-bold text-lg mb-4">Informasi</h5>
@@ -60,38 +60,3 @@
         </div>
     </div>
 </footer>
-
-<script>
-    // Initialize Lucide Icons
-    lucide.createIcons();
-
-    // --- Search Toggle Logic ---
-    const searchButton = document.getElementById('search-button');
-    const searchInput = document.getElementById('search-input');
-    const desktopMenuContainer = document.getElementById('desktop-menu-container');
-
-    searchButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        // Check if input is currently hidden (or has no width)
-        if (searchInput.classList.contains('w-0')) {
-            // Expand search input
-            searchInput.classList.remove('w-0', 'opacity-0');
-            searchInput.classList.add('w-64', 'opacity-100', 'px-4'); // Give it width and padding
-            desktopMenuContainer.classList.add('opacity-0', 'invisible', 'w-0'); // Hide menu and collapse its space
-            searchInput.focus(); // Focus on the input field
-        } else {
-            // Collapse search input
-            searchInput.classList.add('w-0', 'opacity-0');
-            searchInput.classList.remove('w-64', 'opacity-100', 'px-4');
-            desktopMenuContainer.classList.remove('opacity-0', 'invisible', 'w-0'); // Show menu
-        }
-    });
-
-    // --- Mobile Menu Toggle Logic ---
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-</script>
