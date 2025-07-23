@@ -1,35 +1,27 @@
-/**
- * File: faq.js
- * Deskripsi: Skrip ini menangani fungsionalitas pencarian
- * dan interaksi lain di halaman FAQ.
- */
-
 document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('faq-search-input');
     const faqList = document.getElementById('faq-list');
     const noResults = document.getElementById('no-results');
 
     if (searchInput && faqList && noResults) {
-        searchInput.addEventListener('keyup', function () {
-            const searchTerm = searchInput.value.toLowerCase();
-            const questions = faqList.getElementsByClassName('faq-item');
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            const questions = faqList.querySelectorAll('.faq-item');
             let resultsFound = false;
 
-            for (let i = 0; i < questions.length; i++) {
-                const questionText = questions[i].querySelector('.faq-question span').textContent.toLowerCase();
+            questions.forEach(item => {
+                const questionSpan = item.querySelector('summary span');
+                const questionText = questionSpan ? questionSpan.textContent.toLowerCase() : '';
+
                 if (questionText.includes(searchTerm)) {
-                    questions[i].style.display = '';
+                    item.classList.remove('hidden');
                     resultsFound = true;
                 } else {
-                    questions[i].style.display = 'none';
+                    item.classList.add('hidden');
                 }
-            }
+            });
 
-            if (resultsFound) {
-                noResults.classList.add('hidden');
-            } else {
-                noResults.classList.remove('hidden');
-            }
+            noResults.classList.toggle('hidden', resultsFound);
         });
     }
 });
