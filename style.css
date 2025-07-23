@@ -51,14 +51,18 @@ body {
     transform: translateX(0);
 }
 
-/* Perbaikan Celah Hover Menu */
-#desktop-menu-items .group {
-    padding-bottom: 1rem;
-    margin-bottom: -1rem;
+/* Aturan :hover untuk menampilkan menu */
+.group:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
-
-#desktop-menu-items .group .dropdown-menu {
-    margin-top: 0;
+.group\\/submenu:hover > .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 
