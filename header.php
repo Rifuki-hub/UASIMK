@@ -70,9 +70,9 @@
                                 <span>Layanan & Panduan</span>
                                 <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                             </button>
-                            <div class="dropdown-menu absolute top-full right-0 mt-2 w-[56rem] z-20">
+                            <div class="dropdown-menu absolute top-full right-0 mt-2 w-[64rem] z-20">
                                 <div class="bg-white rounded-md shadow-lg">
-                                    <div class="p-8 grid grid-cols-3 gap-8">
+                                    <div class="p-8 grid grid-cols-3 gap-12">
                                         <!-- Mega Menu Content -->
                                         <div><h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Untuk Anda</h3><ul class="space-y-4"><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Online</div><p class="text-sm text-gray-500">Lacak kiriman, registrasi IMEI, kalkulator pabean.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Tanya Jawab (FAQ)</div><p class="text-sm text-gray-500">Jawaban untuk pertanyaan umum.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Kantor Bea dan Cukai</div><p class="text-sm text-gray-500">Temukan alamat dan kontak kantor layanan.</p></a></li></ul></div>
                                         <div><h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Regulasi & Fasilitas</h3><ul class="space-y-4"><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Pabean</div><p class="text-sm text-gray-500">Aturan & prosedur impor-ekspor.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Cukai</div><p class="text-sm text-gray-500">Aturan & prosedur barang kena cukai.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Fasilitas</div><p class="text-sm text-gray-500">KITE, Kawasan Berikat, dan lainnya.</p></a></li></ul></div>
@@ -87,7 +87,8 @@
                         <form id="search-form" class="relative flex items-center" onsubmit="return document.getElementById('search-input').value.trim() !== ''">
                             <input type="text" id="search-input" placeholder="Cari informasi..." class="bg-white rounded-full h-10 text-gray-800 transition-all duration-300 ease-in-out w-0 opacity-0 p-0 focus:outline-none focus:ring-2 focus:ring-yellow-400">
                             <button id="search-toggle-button" type="button" class="text-white/80 hover:text-white p-2">
-                                <i data-lucide="search" id="search-icon" class="w-6 h-6"></i>
+                                <i data-lucide="search" id="search-icon-open" class="w-6 h-6"></i>
+                                <i data-lucide="x" id="search-icon-close" class="w-6 h-6 hidden"></i>
                             </button>
                         </form>
                     </div>

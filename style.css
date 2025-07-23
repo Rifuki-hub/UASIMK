@@ -11,26 +11,26 @@ body {
     @apply text-white hover:text-yellow-400 transition-colors duration-200 py-4;
 }
 .nav-link.active {
-    color: #FBBF24; /* yellow-400 */
+    color: var(--color-accent);
     font-weight: 600;
 }
 .nav-link.active span {
-    color: #FBBF24;
+    color: var(--color-accent);
     font-weight: 600;
 }
 .nav-link.active svg {
-    color: #FBBF24;
+    color: var(--color-accent);
 }
 
 /* === Mobile Nav === */
 .mobile-nav-link.active {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #FBBF24;
+    color: var(--color-accent);
 }
 
 /* === Hero Background === */
 .hero-bg {
-    background-color: #0A2351;
+    background-color: var(--color-primary);
     background-image: 
         radial-gradient(circle at 10% 20%, rgba(13, 40, 95, 0.8) 0%, transparent 50%),
         radial-gradient(circle at 80% 90%, rgba(13, 40, 95, 0.9) 0%, transparent 40%);
@@ -38,7 +38,7 @@ body {
 
 /* === Highlight === */
 .highlight-yellow {
-    color: #FACC15;
+    color: var(--color-accent-dark);
 }
 
 /* === Dropdown Menu === */
@@ -138,10 +138,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .news-card {
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    overflow: hidden;
+    @apply card overflow-hidden;
     transition: box-shadow 0.3s;
 }
 .news-card:hover {
@@ -153,7 +150,7 @@ body {
 
 /* === Statistik / KPI Cards === */
 .kpi-card {
-    @apply bg-white p-6 rounded-xl shadow-md border border-gray-200 transition-all hover:shadow-lg hover:-translate-y-1;
+    @apply card p-6 card-interactive;
 }
 .kpi-icon {
     @apply w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0;
