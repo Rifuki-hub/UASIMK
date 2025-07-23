@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="perbaikan.css">
 </head>
 <body class="bg-gray-50">
 
