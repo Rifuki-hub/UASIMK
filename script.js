@@ -29,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (isSearchHidden) {
                 // Show search
                 searchInput.classList.remove('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.add('w-64', 'opacity-100', 'px-4', 'mr-2');
+                searchInput.classList.add('w-64', 'opacity-100', 'px-4');
                 if(desktopMenuItems) {
-                    desktopMenuItems.style.maxWidth = '0';
                     desktopMenuItems.classList.add('opacity-0', 'invisible');
+                    setTimeout(() => {
+                        desktopMenuItems.style.maxWidth = '0';
+                    }, 150);
                 }
                 searchInput.focus();
                 if (searchIconOpen) searchIconOpen.classList.add('hidden');
@@ -40,10 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 // Hide search
                 searchInput.classList.add('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.remove('w-64', 'opacity-100', 'px-4', 'mr-2');
+                searchInput.classList.remove('w-64', 'opacity-100', 'px-4');
                 if(desktopMenuItems) {
                     desktopMenuItems.style.maxWidth = '';
-                    desktopMenuItems.classList.remove('opacity-0', 'invisible');
+                    setTimeout(() => {
+                        desktopMenuItems.classList.remove('opacity-0', 'invisible');
+                    }, 150);
                 }
                 if (searchIconOpen) searchIconOpen.classList.remove('hidden');
                 if (searchIconClose) searchIconClose.classList.add('hidden');
