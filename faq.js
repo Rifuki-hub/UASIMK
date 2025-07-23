@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('faq-search-input');
     const faqList = document.getElementById('faq-list');
     const noResults = document.getElementById('no-results');
-    const faqItems = faqList.querySelectorAll('.faq-item');
+    const faqItems = Array.from(faqList.querySelectorAll('.faq-item'));
 
     if (searchInput) {
         searchInput.addEventListener('input', function () {
             const searchTerm = this.value.toLowerCase().trim();
 
             // Show loading effect
-            faqList.classList.add('hidden');
+            faqList.style.display = 'none';
             noResults.classList.add('hidden');
 
             let loadingSpinner = document.getElementById('loading-spinner');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 loadingSpinner.classList.add('hidden');
-                faqList.classList.remove('hidden');
+                faqList.style.display = '';
 
                 if (found) {
                     noResults.classList.add('hidden');

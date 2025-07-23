@@ -43,6 +43,7 @@
                         <div class="relative w-full sm:w-48">
                             <select id="dashboard-search-category" class="w-full bg-transparent text-white pl-4 pr-8 py-3 rounded-full appearance-none focus:outline-none">
                                 <option value="semua" class="text-black">Semua</option>
+                                <option value="lacak" class="text-black">Lacak Kiriman</option>
                                 <option value="peraturan" class="text-black">Peraturan</option>
                                 <option value="kurs" class="text-black">Kurs Pajak</option>
                                 <option value="berita" class="text-black">Berita</option>
@@ -50,7 +51,6 @@
                         </div>
                         <input id="dashboard-search-input" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
                         <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
-
                             <i data-lucide="search" class="w-5 h-5"></i>
                             <span>Cari</span>
                         </button>
