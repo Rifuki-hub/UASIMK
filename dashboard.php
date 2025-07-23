@@ -43,7 +43,6 @@
                         <div class="relative w-full sm:w-48">
                             <select class="w-full bg-transparent text-white pl-4 pr-8 py-3 rounded-full appearance-none focus:outline-none">
                                 <option value="semua" class="text-black">Semua</option>
-                                <option value="lacak" class="text-black">Lacak Kiriman</option>
                                 <option value="peraturan" class="text-black">Peraturan</option>
                                 <option value="kurs" class="text-black">Kurs Pajak</option>
                                 <option value="berita" class="text-black">Berita</option>
