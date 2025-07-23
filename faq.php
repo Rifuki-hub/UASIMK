@@ -23,22 +23,18 @@
 
     <main>
         <!-- Breadcrumb -->
-        <section class="bg-gray-100 py-4 border-b">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <nav class="flex items-center text-sm text-gray-500" aria-label="Breadcrumb">
-                    <ol class="flex items-center space-x-2">
-                        <li><a href="#" class="hover:text-gray-700 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Beranda</a></li>
-                        <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
-                        <li><a href="#" class="hover:text-gray-700">Layanan & Panduan</a></li>
-                        <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
-                        <li class="font-semibold text-gray-800" aria-current="page">Tanya Jawab (FAQ)</li>
-                    </ol>
-                </nav>
+        <section class="bg-[#0A2351] py-4 shadow-md">
+            <div class="container mx-auto px-4 flex items-center text-white text-sm">
+                <a href="#" class="hover:underline">Beranda</a>
+                <svg class="mx-2 w-4 h-4 fill-current text-white" viewBox="0 0 20 20">
+                    <path d="M7.05 4.05a1 1 0 011.41 0L13 8.59a1 1 0 010 1.41l-4.54 4.54a1 1 0 01-1.41-1.41L10.59 10 7.05 6.46a1 1 0 010-1.41z"/>
+                </svg>
+                <span class="font-medium text-[#FACC15]">Tanya Jawab (FAQ)</span>
             </div>
         </section>
 
         <!-- Hero Section with Search -->
-        <section class="faq-hero">
+        <section class="faq-hero py-12">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl font-bold text-white tracking-tight">Pusat Bantuan & Informasi</h1>
                 <p class="mt-4 text-lg text-white/80 max-w-2xl mx-auto">Punya pertanyaan? Cari jawaban yang Anda butuhkan di sini.</p>
@@ -52,7 +48,7 @@
         </section>
 
         <!-- FAQ Content Section -->
-        <section class="py-16 sm:py-24">
+        <section class="py-8 sm:py-12">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-[#0A2351]">Pertanyaan Populer</h2>
