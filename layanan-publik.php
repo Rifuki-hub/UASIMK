@@ -47,41 +47,35 @@
         <!-- Main Content Section -->
         <section class="py-16 sm:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto space-y-4">
-
-                    <!-- Accordion: Layanan Importasi -->
-                    <details class="service-accordion-item group">
-                        <summary class="service-accordion-summary">
-                            <div class="flex items-center gap-4">
-                                <div class="service-icon bg-blue-100 text-blue-600"><i data-lucide="arrow-down-left"></i></div>
-                                <h2 class="service-title">Layanan Importasi</h2>
-                            </div>
-                            <i data-lucide="chevron-down" class="accordion-icon"></i>
-                        </summary>
-                        <div class="service-accordion-content">
-                            <details class="nested-accordion">
-                                <summary class="nested-summary">Pemberitahuan Pengangkutan RKSP</summary>
-                                <div class="nested-content">
-                                    <ol>
-                                        <li>Penyerahan dan Penatausahaan Pemberitahuan RKSP untuk Sarana Pengangkut melalui Laut dan Udara melalui Tulisan di Atas Formulir</li>
-                                        <li>Penyerahan dan Penatausahaan Pemberitahuan RKSP untuk Sarana Pengangkut melalui Laut dan Udara melalui Media Penyimpan Data Elektronik</li>
-                                        <li>Penyerahan dan Penatausahaan Pemberitahuan RKSP untuk Sarana Pengangkut melalui Laut dan Udara Melalui Sistem PDE</li>
-                                        <li>Perbaikan RKSP (dengan Persetujuan Kepala Kantor)</li>
-                                        <li>Perbaikan RKSP (tanpa Persetujuan Kepala Kantor)</li>
-                                        <li>Pembatalan RKSP</li>
-                                    </ol>
-                                    <p class="download-link">Rincian komponen standar pelayanan diatas dapat dilihat <a href="#">disini (download)</a></p>
-                                </div>
-                            </details>
-                            <details class="nested-accordion"><summary class="nested-summary">Pemberitahuan Pengangkutan Manifest</summary><div class="nested-content"><p>Konten detail akan ditambahkan.</p></div></details>
-                            <details class="nested-accordion"><summary class="nested-summary">Operasional Kawasan Pabean dan TPS</summary><div class="nested-content"><p>Konten detail akan ditambahkan.</p></div></details>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <a href="#" class="service-card group">
+                        <div class="service-card-icon bg-blue-100 text-blue-600">
+                            <i data-lucide="arrow-down-left"></i>
                         </div>
-                    </details>
-
-                    <!-- Accordion Lainnya -->
-                    <details class="service-accordion-item group"><summary class="service-accordion-summary"><div class="flex items-center gap-4"><div class="service-icon bg-green-100 text-green-600"><i data-lucide="arrow-up-right"></i></div><h2 class="service-title">Layanan Ekspor</h2></div><i data-lucide="chevron-down" class="accordion-icon"></i></summary><div class="service-accordion-content"><p class="text-gray-600">Informasi detail untuk layanan ekspor akan segera tersedia.</p></div></details>
-                    <details class="service-accordion-item group"><summary class="service-accordion-summary"><div class="flex items-center gap-4"><div class="service-icon bg-purple-100 text-purple-600"><i data-lucide="building-2"></i></div><h2 class="service-title">Layanan Fasilitas Kepabeanan</h2></div><i data-lucide="chevron-down" class="accordion-icon"></i></summary><div class="service-accordion-content"><p class="text-gray-600">Informasi detail untuk layanan fasilitas kepabeanan akan segera tersedia.</p></div></details>
-                    <details class="service-accordion-item group"><summary class="service-accordion-summary"><div class="flex items-center gap-4"><div class="service-icon bg-amber-100 text-amber-600"><i data-lucide="stamp"></i></div><h2 class="service-title">Layanan Cukai</h2></div><i data-lucide="chevron-down" class="accordion-icon"></i></summary><div class="service-accordion-content"><p class="text-gray-600">Informasi detail untuk layanan cukai akan segera tersedia.</p></div></details>
+                        <h3 class="service-card-title">Layanan Importasi</h3>
+                        <p class="service-card-description">Prosedur dan ketentuan untuk impor barang.</p>
+                    </a>
+                    <a href="#" class="service-card group">
+                        <div class="service-card-icon bg-green-100 text-green-600">
+                            <i data-lucide="arrow-up-right"></i>
+                        </div>
+                        <h3 class="service-card-title">Layanan Ekspor</h3>
+                        <p class="service-card-description">Prosedur dan ketentuan untuk ekspor barang.</p>
+                    </a>
+                    <a href="#" class="service-card group">
+                        <div class="service-card-icon bg-purple-100 text-purple-600">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3 class="service-card-title">Fasilitas Kepabeanan</h3>
+                        <p class="service-card-description">Informasi tentang KITE, Kawasan Berikat, dll.</p>
+                    </a>
+                    <a href="#" class="service-card group">
+                        <div class="service-card-icon bg-amber-100 text-amber-600">
+                            <i data-lucide="stamp"></i>
+                        </div>
+                        <h3 class="service-card-title">Layanan Cukai</h3>
+                        <p class="service-card-description">Ketentuan terkait barang kena cukai.</p>
+                    </a>
                 </div>
 
                 <!-- Maklumat Pelayanan -->
@@ -94,7 +88,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>

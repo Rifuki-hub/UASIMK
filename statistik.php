@@ -54,10 +54,18 @@
         <section class="py-12">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Filters -->
-                <div class="mb-8 flex justify-center">
-                    <div class="inline-flex bg-gray-200 rounded-lg p-1">
-                        <button class="px-4 py-2 text-sm font-semibold rounded-md bg-white text-[#0A2351] shadow">Tahunan</button>
-                        <button class="px-4 py-2 text-sm font-semibold text-gray-600">Bulanan</button>
+                <div class="mb-8 flex flex-wrap justify-between items-center gap-4">
+                    <h2 class="text-2xl font-bold text-gray-800">Statistik Utama</h2>
+                    <div class="flex items-center gap-2">
+                        <select class="form-select">
+                            <option>Tahunan</option>
+                            <option>Bulanan</option>
+                        </select>
+                        <select class="form-select">
+                            <option>2025</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                        </select>
                     </div>
                 </div>
 
