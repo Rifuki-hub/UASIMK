@@ -10,7 +10,7 @@
 
 /* FAQ Accordion Item Styles */
 .faq-item {
-    @apply bg-white border border-gray-200 rounded-lg shadow-sm;
+    @apply card;
 }
 .faq-question {
     @apply flex justify-between items-center w-full p-5 font-semibold text-gray-800 text-left cursor-pointer;
@@ -38,8 +38,6 @@
 }
 
 /* Prose styling for article content */
-.prose h1 { @apply text-3xl font-bold text-gray-900 mb-2; }
-.prose h2 { @apply text-xl font-bold text-gray-800 mt-6 mb-3; }
 .prose p { @apply text-gray-700 leading-relaxed my-4; }
 .prose ul { @apply list-disc pl-6 space-y-2; }
 .prose li { @apply text-gray-700; }

@@ -18,6 +18,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <script src="script.js" defer></script>
     <script src="lacak-kiriman.js" defer></script>
 </head>
@@ -76,10 +77,10 @@
                                 </div>
                             </div>
                             <div class="mt-8 flex flex-col sm:flex-row items-center justify-end gap-4">
-                                <button type="button" id="clear-button" class="w-full sm:w-auto px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 font-semibold transition-colors">
+                                <button type="button" id="clear-button" class="btn btn-outline w-full sm:w-auto">
                                     Bersihkan
                                 </button>
-                                <button type="submit" class="w-full sm:w-auto px-8 py-3 bg-[#0A2351] text-white font-bold rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2">
+                                <button type="submit" class="btn btn-secondary w-full sm:w-auto flex items-center justify-center gap-2">
                                     <i data-lucide="search" class="w-5 h-5"></i>
                                     Lacak Kiriman
                                 </button>

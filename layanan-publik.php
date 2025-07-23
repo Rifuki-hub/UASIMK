@@ -15,6 +15,7 @@
     <!-- Memuat CSS utama dan CSS khusus halaman ini -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layanan.css">
+    <link rel="stylesheet" href="theme.css">
 </head>
 <body class="bg-gray-50">
 
