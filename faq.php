@@ -52,13 +52,19 @@
         <section class="py-8 sm:py-12">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-[#0A2351]">Pertanyaan Populer</h2>
-                    <p class="mt-2 text-gray-600">Berikut adalah beberapa pertanyaan yang paling sering diajukan.</p>
+                    <h2 class="text-3xl font-bold text-[#0A2351]">Kategori Pertanyaan</h2>
+                    <div class="mt-4 flex justify-center gap-2">
+                        <button class="faq-filter-button active">Semua</button>
+                        <button class="faq-filter-button">Impor</button>
+                        <button class="faq-filter-button">Ekspor</button>
+                        <button class="faq-filter-button">Cukai</button>
+                        <button class="faq-filter-button">Lainnya</button>
+                    </div>
                 </div>
 
                 <!-- Accordion FAQ -->
                 <div class="max-w-3xl mx-auto space-y-4" id="faq-list">
-                    <details class="faq-item group">
+                    <details class="faq-item group" data-category="impor">
                         <summary class="faq-question">
                             <span>Bagaimana ketentuan impor barang untuk Pekerja Migran Indonesia (PMI)?</span>
                             <i data-lucide="chevron-down" class="faq-icon"></i>
@@ -68,7 +74,7 @@
                             <a href="faq-detail.php" class="font-semibold text-blue-600 hover:underline mt-2 inline-block">Baca selengkapnya...</a>
                         </div>
                     </details>
-                    <details class="faq-item group">
+                    <details class="faq-item group" data-category="impor">
                         <summary class="faq-question">
                             <span>Apa itu IMEI dan mengapa saya harus mendaftarkannya?</span>
                             <i data-lucide="chevron-down" class="faq-icon"></i>
@@ -77,7 +83,7 @@
                             <p>IMEI (International Mobile Equipment Identity) adalah nomor identitas khusus yang dikeluarkan oleh asosiasi GSM (GSMA) untuk tiap slot kartu GSM yang dikeluarkan oleh produsen ponsel. Pendaftaran IMEI diperlukan untuk perangkat telekomunikasi yang dibawa dari luar negeri agar dapat menggunakan jaringan seluler di Indonesia.</p>
                         </div>
                     </details>
-                    <details class="faq-item group">
+                    <details class="faq-item group" data-category="impor">
                         <summary class="faq-question">
                             <span>Berapa batas nilai barang pribadi penumpang yang bebas bea masuk?</span>
                             <i data-lucide="chevron-down" class="faq-icon"></i>
@@ -86,7 +92,7 @@
                             <p>Setiap penumpang perorangan diberikan pembebasan bea masuk atas impor barang pribadi dengan nilai pabean paling banyak FOB USD 500 per orang untuk setiap kedatangan.</p>
                         </div>
                     </details>
-                    <details class="faq-item group">
+                    <details class="faq-item group" data-category="lainnya">
                         <summary class="faq-question">
                             <span>Bagaimana cara menghitung bea masuk dan pajak impor?</span>
                             <i data-lucide="chevron-down" class="faq-icon"></i>
