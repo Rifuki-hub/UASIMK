@@ -126,9 +126,16 @@ body {
 }
 
 /* === Card Styles === */
-
-.feature-card-v2 {
-    @apply bg-white/5 border border-white/10 rounded-lg p-6 text-center transition-all duration-300 ease-in-out transform hover:bg-white/10 hover:-translate-y-1;
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.feature-card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .news-card {
     @apply card overflow-hidden;
