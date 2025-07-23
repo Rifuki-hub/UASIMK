@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (isSearchHidden) {
                 // Show search
                 searchInput.classList.remove('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.add('w-64', 'opacity-100', 'px-4');
+                searchInput.classList.add('w-64', 'opacity-100', 'px-4', 'mr-2');
                 if(desktopMenuItems) {
                     desktopMenuItems.style.maxWidth = '0';
                     desktopMenuItems.classList.add('opacity-0', 'invisible');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 // Hide search
                 searchInput.classList.add('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.remove('w-64', 'opacity-100', 'px-4');
+                searchInput.classList.remove('w-64', 'opacity-100', 'px-4', 'mr-2');
                 if(desktopMenuItems) {
                     desktopMenuItems.style.maxWidth = '';
                     desktopMenuItems.classList.remove('opacity-0', 'invisible');
@@ -53,12 +53,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Dashboard search logic
     const dashboardSearchForm = document.getElementById('dashboard-search-form');
+    const dashboardSearchInput = document.getElementById('dashboard-search-input');
+    const dashboardSearchResults = document.getElementById('dashboard-search-results');
+
     if (dashboardSearchForm) {
         dashboardSearchForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            const searchResults = document.getElementById('dashboard-search-results');
-            if (searchResults) {
-                searchResults.classList.remove('hidden');
+            if (dashboardSearchInput.value.trim() !== '') {
+                if (dashboardSearchResults) {
+                    dashboardSearchResults.classList.remove('hidden');
+                }
+            } else {
+                if (dashboardSearchResults) {
+                    dashboardSearchResults.classList.add('hidden');
+                }
+            }
+        });
+
+        dashboardSearchInput.addEventListener('input', function() {
+            if (this.value.trim() === '') {
+                if (dashboardSearchResults) {
+                    dashboardSearchResults.classList.add('hidden');
+                }
             }
         });
     }
