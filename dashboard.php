@@ -19,6 +19,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="perbaikan.css">
     <script src="script.js"></script>
 </head>
 <body class="bg-gray-50">
