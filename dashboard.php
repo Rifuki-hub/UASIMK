@@ -51,7 +51,6 @@
                         <input id="dashboard-search-input" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
                         <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
                             <i data-lucide="search" class="w-5 h-5"></i>
-                            <span>Cari</span>
                         </button>
                     </form>
                     <div id="dashboard-search-results" class="mt-4 text-white hidden">Data belum tersedia</div>

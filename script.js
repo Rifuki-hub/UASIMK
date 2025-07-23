@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Inisialisasi ikon Lucide
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
 
-    // Mobile menu logic
+    // Logika untuk menu mobile
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenuButton && mobileMenu) {
@@ -15,43 +16,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Desktop search logic
+    // --- LOGIKA PENCARIAN DESKTOP (HANYA MENGURUS PENCARIAN) ---
+    const mainNav = document.getElementById('main-nav');
     const searchToggleButton = document.getElementById('search-toggle-button');
     const searchInput = document.getElementById('search-input');
-    const desktopMenuItems = document.getElementById('desktop-menu-items');
     const searchIconOpen = document.getElementById('search-icon-open');
     const searchIconClose = document.getElementById('search-icon-close');
 
-    if (searchToggleButton) {
-        searchToggleButton.addEventListener('click', function() {
-            const isSearchHidden = searchInput.classList.contains('w-0');
+    if (mainNav && searchToggleButton && searchInput) {
+        searchToggleButton.addEventListener('click', function (event) {
+            event.stopPropagation(); 
+            mainNav.classList.toggle('search-active');
+            
+            const isSearchActive = mainNav.classList.contains('search-active');
 
-            if (isSearchHidden) {
-                // Show search
-                desktopMenuItems.classList.add('opacity-0', 'invisible');
-                searchInput.classList.remove('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.add('w-64', 'opacity-100', 'px-4');
+            if (isSearchActive) {
                 searchInput.focus();
-                searchIconOpen.classList.add('hidden');
-                searchIconClose.classList.remove('hidden');
-            } else {
-                // Hide search
-                desktopMenuItems.classList.remove('opacity-0', 'invisible');
-                searchInput.classList.add('w-0', 'opacity-0', 'p-0');
-                searchInput.classList.remove('w-64', 'opacity-100', 'px-4');
-                searchIconOpen.classList.remove('hidden');
-                searchIconClose.classList.add('hidden');
             }
+
+            searchIconOpen.classList.toggle('hidden', isSearchActive);
+            searchIconClose.classList.toggle('hidden', !isSearchActive);
         });
     }
 
-    // Dashboard search logic
+    // --- TIDAK ADA LAGI LOGIKA MOUSEENTER/MOUSELEAVE UNTUK MENU DESKTOP ---
+    // CSS akan menanganinya sepenuhnya.
+
+    // Menutup bar pencarian saat mengklik di luar
+    document.addEventListener('click', function(event) {
+        const searchContainer = document.getElementById('search-container');
+        if (searchContainer && !searchContainer.contains(event.target) && mainNav.classList.contains('search-active')) {
+             mainNav.classList.remove('search-active');
+             searchIconOpen.classList.remove('hidden');
+             searchIconClose.classList.add('hidden');
+        }
+    });
+
+    // Logika pencarian di dashboard (tidak berubah)
     const dashboardSearchForm = document.getElementById('dashboard-search-form');
     const dashboardSearchInput = document.getElementById('dashboard-search-input');
     const dashboardSearchResults = document.getElementById('dashboard-search-results');
 
     if (dashboardSearchForm) {
-        dashboardSearchForm.addEventListener('submit', function(e) {
+        dashboardSearchForm.addEventListener('submit', function (e) {
             e.preventDefault();
             if (dashboardSearchInput.value.trim() !== '') {
                 if (dashboardSearchResults) {
@@ -64,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        dashboardSearchInput.addEventListener('input', function() {
+        dashboardSearchInput.addEventListener('input', function () {
             if (this.value.trim() === '') {
                 if (dashboardSearchResults) {
                     dashboardSearchResults.classList.add('hidden');

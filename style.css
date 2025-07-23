@@ -8,17 +8,13 @@ body {
 
 /* === Navigasi Umum === */
 .nav-link {
-    @apply text-white hover:text-yellow-400 transition-colors duration-200 py-4;
+    @apply text-white/80 hover:text-white transition-colors duration-200;
 }
 .nav-link.active {
     color: var(--color-accent);
     font-weight: 600;
 }
-.nav-link.active span {
-    color: var(--color-accent);
-    font-weight: 600;
-}
-.nav-link.active svg {
+.nav-link.active span, .nav-link.active svg {
     color: var(--color-accent);
 }
 
@@ -28,82 +24,81 @@ body {
     color: var(--color-accent);
 }
 
-/* === Hero Background === */
-.hero-bg {
-    background-color: var(--color-primary);
-    background-image: 
-        radial-gradient(circle at 10% 20%, rgba(13, 40, 95, 0.8) 0%, transparent 50%),
-        radial-gradient(circle at 80% 90%, rgba(13, 40, 95, 0.9) 0%, transparent 40%);
-}
-
-/* === Highlight === */
-.highlight-yellow {
-    color: var(--color-accent-dark);
-}
-
-/* === Dropdown Menu === */
-.dropdown-menu {
+/* === Dropdown Menu (KEMBALI KE KONTROL CSS) === */
+.dropdown-menu, .submenu {
     display: none;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.group:hover .dropdown-menu,
-.group:focus-within .dropdown-menu {
+.dropdown-menu {
+    transform: translateY(10px);
+}
+.submenu {
+    transform: translateX(10px);
+}
+
+/* Aturan :hover untuk menampilkan menu */
+.group:hover > .dropdown-menu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-
-/* === Nested Dropdown Menu === */
-.submenu {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-}
-.group\/submenu:hover .submenu,
-.group\/submenu:focus-within .submenu {
+.group\\/submenu:hover > .submenu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
 }
 
+
 /* === Search Bar (Desktop) === */
 #desktop-menu-items {
-    transition: all 0.4s ease-in-out;
-    opacity: 1;
+    transition: max-width 0.4s ease-in-out, opacity 0.2s ease-in-out, margin-right 0.4s ease-in-out;
     max-width: 500px;
+    opacity: 1;
     visibility: visible;
     white-space: nowrap;
+    /* overflow: hidden; <-- DIHAPUS DARI SINI AGAR DROPDOWN TIDAK TERPOTONG */
+    margin-right: 0;
 }
+
 #search-input {
-    transition: all 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, padding 0.4s ease-in-out;
     width: 0;
     opacity: 0;
     padding: 0;
+    border: 1px solid transparent;
 }
+
+#search-toggle-button {
+    position: static;
+    color: white;
+}
+
+/* === Kondisi AKTIF: Saat #main-nav memiliki kelas .search-active === */
 #main-nav.search-active #desktop-menu-items {
     max-width: 0;
     opacity: 0;
     visibility: hidden;
+    margin-right: 1rem;
+    overflow: hidden; /* <-- DIPINDAHKAN KE SINI, HANYA AKTIF SAAT SEARCH */
 }
 #main-nav.search-active #search-input {
     width: 256px;
     opacity: 1;
-    padding-left: 1rem;
-    padding-right: 2.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-color: #D1D5DB;
+}
+#main-nav.search-active #search-toggle-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4B5563;
 }
 
-/* === Search Bar (Transition Only) === */
-#search-input.search-active {
-    padding-left: 1rem;
-    padding-right: 2.5rem;
-}
 
 /* === Mobile Menu Styles === */
 .mobile-menu-item {
@@ -194,4 +189,26 @@ details > summary {
 }
 details > summary::-webkit-details-marker {
     display: none;
+}
+.mobile-menu-item { @apply border-b border-white/10; }
+.mobile-menu-summary { @apply flex items-center gap-3 w-full py-3 text-left text-base font-medium text-white hover:bg-white/10 rounded-md px-3 cursor-pointer; }
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+
+.group {
+    position: relative;
+}
+.dropdown-menu {
+    pointer-events: none;
+}
+.group:hover .dropdown-menu {
+    pointer-events: auto;
+}
+
+/* Perluas area hover agar tidak ada gap */
+.group {
+    padding-bottom: 0.5rem; /* atau sesuaikan */
+}
+.dropdown-menu {
+    margin-top: 0.25rem; /* hilangkan jarak terlalu besar dari tombol */
 }
