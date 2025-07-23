@@ -18,6 +18,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
     <script src="script.js"></script>
 </head>
 <body class="bg-gray-50">
@@ -49,7 +50,7 @@
                             </select>
                         </div>
                         <input type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
-                        <button type="submit" class="bg-yellow-400 text-[#0A2351] font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2">
+                        <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
                             <i data-lucide="search" class="w-5 h-5"></i>
                             <span>Cari</span>
                         </button>
@@ -155,10 +156,10 @@
                         <h2 class="text-3xl font-bold text-gray-800">Komitmen Kami untuk Transparansi</h2>
                         <p class="mt-4 text-lg text-gray-600">Bea Cukai berkomitmen untuk memberikan pelayanan yang transparan dan bebas dari korupsi. Laporkan setiap pelanggaran yang Anda temui dan bantu kami membangun sistem yang lebih baik.</p>
                         <div class="mt-6 flex flex-wrap gap-4">
-                            <a href="#" class="bg-[#0A2351] text-white font-semibold px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center gap-2">
+                            <a href="#" class="btn btn-secondary flex items-center gap-2">
                                 <i data-lucide="file-text" class="w-5 h-5"></i> Lapor Gratifikasi
                             </a>
-                            <a href="#" class="bg-gray-200 text-gray-800 font-semibold px-6 py-3 rounded-lg hover:bg-gray-300 transition-colors flex items-center gap-2">
+                            <a href="#" class="btn btn-outline flex items-center gap-2">
                                 <i data-lucide="phone-call" class="w-5 h-5"></i> Tanya BRAVO 1500225
                             </a>
                         </div>
