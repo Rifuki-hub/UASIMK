@@ -85,11 +85,13 @@
                     </div>
                     <div id="search-container" class="flex items-center">
                         <form id="search-form" class="relative flex items-center" onsubmit="return document.getElementById('search-input').value.trim() !== ''">
-                            <input type="text" id="search-input" placeholder="Cari informasi..." class="bg-white rounded-full h-10 text-gray-800 transition-all duration-300 ease-in-out w-0 opacity-0 p-0 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                            <button id="search-toggle-button" type="button" class="text-white/80 hover:text-white p-2">
+
+                            <button id="search-toggle-button" type="button" class="text-white/80 hover:text-white p-2 order-2">
                                 <i data-lucide="search" id="search-icon-open" class="w-6 h-6"></i>
                                 <i data-lucide="x" id="search-icon-close" class="w-6 h-6 hidden"></i>
+
                             </button>
+                            <input type="text" id="search-input" placeholder="Cari informasi..." class="bg-white rounded-full h-10 text-gray-800 transition-all duration-300 ease-in-out w-0 opacity-0 p-0 focus:outline-none focus:ring-2 focus:ring-yellow-400 order-1">
                         </form>
                     </div>
                 </div>

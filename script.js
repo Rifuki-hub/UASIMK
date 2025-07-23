@@ -28,29 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (isSearchHidden) {
                 // Show search
+                desktopMenuItems.classList.add('opacity-0', 'invisible');
                 searchInput.classList.remove('w-0', 'opacity-0', 'p-0');
                 searchInput.classList.add('w-64', 'opacity-100', 'px-4');
-                if(desktopMenuItems) {
-                    desktopMenuItems.classList.add('opacity-0', 'invisible');
-                    setTimeout(() => {
-                        desktopMenuItems.style.maxWidth = '0';
-                    }, 150);
-                }
                 searchInput.focus();
-                if (searchIconOpen) searchIconOpen.classList.add('hidden');
-                if (searchIconClose) searchIconClose.classList.remove('hidden');
+                searchIconOpen.classList.add('hidden');
+                searchIconClose.classList.remove('hidden');
             } else {
                 // Hide search
+                desktopMenuItems.classList.remove('opacity-0', 'invisible');
                 searchInput.classList.add('w-0', 'opacity-0', 'p-0');
                 searchInput.classList.remove('w-64', 'opacity-100', 'px-4');
-                if(desktopMenuItems) {
-                    desktopMenuItems.style.maxWidth = '';
-                    setTimeout(() => {
-                        desktopMenuItems.classList.remove('opacity-0', 'invisible');
-                    }, 150);
-                }
-                if (searchIconOpen) searchIconOpen.classList.remove('hidden');
-                if (searchIconClose) searchIconClose.classList.add('hidden');
+                searchIconOpen.classList.remove('hidden');
+                searchIconClose.classList.add('hidden');
             }
         });
     }
