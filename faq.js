@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('faq-search-input');
     const faqList = document.getElementById('faq-list');
     const noResults = document.getElementById('no-results');
-    const faqItems = Array.from(faqList.querySelectorAll('.faq-item'));
+    const faqItems = faqList.querySelectorAll('.faq-item');
 
     if (searchInput) {
         searchInput.addEventListener('input', function () {
             const searchTerm = this.value.toLowerCase().trim();
 
             // Show loading effect
-            faqList.style.display = 'none';
+            faqList.classList.add('hidden');
             noResults.classList.add('hidden');
 
             let loadingSpinner = document.getElementById('loading-spinner');
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 loadingSpinner.className = 'flex justify-center items-center py-8';
                 loadingSpinner.innerHTML = `
                     <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
-                    <p class="ml-4 text-gray-600">Mencari...</p>
                 `;
                 faqList.parentNode.insertBefore(loadingSpinner, noResults);
             }
@@ -40,20 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 loadingSpinner.classList.add('hidden');
-                faqList.style.display = '';
+                faqList.classList.remove('hidden');
 
                 if (found) {
                     noResults.classList.add('hidden');
                 } else {
                     noResults.classList.remove('hidden');
-                    noResults.innerHTML = `<p>Tidak ada hasil yang ditemukan untuk "<strong>${searchTerm}</strong>"</p>`;
-                }
-
-                if (searchTerm === '') {
-                    faqItems.forEach(item => {
-                        item.style.display = '';
-                    });
-                    noResults.classList.add('hidden');
                 }
             }, 500); // 500ms delay to simulate loading
         });
