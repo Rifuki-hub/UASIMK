@@ -49,7 +49,7 @@
         </section>
 
         <!-- FAQ Content Section -->
-        <section class="py-8 sm:py-12">
+        <section class="py-6 sm:py-10">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-[#0A2351]">Kategori Pertanyaan</h2>

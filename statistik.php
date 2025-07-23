@@ -51,7 +51,7 @@
         </section>
 
         <!-- Main Dashboard Content -->
-        <section class="py-12">
+        <section class="py-10">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Filters -->
                 <div class="mb-8 flex flex-wrap justify-between items-center gap-4">

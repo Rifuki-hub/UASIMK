@@ -84,7 +84,7 @@
         </section>
 
         <!-- Apps Section -->
-        <section class="py-16 sm:py-24 bg-gray-100">
+        <section class="py-12 sm:py-16 bg-gray-100">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto">
                     <h2 class="text-3xl font-bold text-gray-800">Aplikasi Resmi Bea Cukai</h2>
