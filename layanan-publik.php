@@ -45,7 +45,7 @@
         </section>
 
         <!-- Main Content Section -->
-        <section class="py-16 sm:py-24">
+        <section class="py-12 sm:py-16">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <a href="#" class="service-card group">
@@ -93,6 +93,16 @@
     </main>
 
     <?php include 'footer.php'; ?>
+
+    <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg p-6 relative">
+            <button id="close-modal-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <h2 id="modal-title" class="text-2xl font-bold text-gray-800 mb-4"></h2>
+            <div id="modal-content" class="text-gray-600"></div>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
     <script src="layanan.js" defer></script>
