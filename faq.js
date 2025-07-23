@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 loadingSpinner.className = 'flex justify-center items-center py-8';
                 loadingSpinner.innerHTML = `
                     <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+                    <p class="ml-4 text-gray-600">Mencari...</p>
                 `;
                 faqList.parentNode.insertBefore(loadingSpinner, noResults);
             }
@@ -45,6 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     noResults.classList.add('hidden');
                 } else {
                     noResults.classList.remove('hidden');
+                    noResults.innerHTML = `<p>Tidak ada hasil yang ditemukan untuk "<strong>${searchTerm}</strong>"</p>`;
+                }
+
+                if (searchTerm === '') {
+                    faqItems.forEach(item => {
+                        item.style.display = '';
+                    });
+                    noResults.classList.add('hidden');
                 }
             }, 500); // 500ms delay to simulate loading
         });
