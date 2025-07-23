@@ -28,7 +28,7 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-bg text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
                     Mengawal Lalu Lintas Barang,<br>
                     <span class="highlight-yellow">Melayani Indonesia</span>
@@ -39,9 +39,9 @@
 
                 <!-- Search Bar -->
                 <div class="mt-10 max-w-2xl mx-auto">
-                    <form class="flex flex-col sm:flex-row gap-2 bg-white/10 p-2 rounded-full border border-white/20">
+                    <form id="dashboard-search-form" class="flex flex-col sm:flex-row gap-2 bg-white/10 p-2 rounded-full border border-white/20">
                         <div class="relative w-full sm:w-48">
-                            <select class="w-full bg-transparent text-white pl-4 pr-8 py-3 rounded-full appearance-none focus:outline-none">
+                            <select id="dashboard-search-category" class="w-full bg-transparent text-white pl-4 pr-8 py-3 rounded-full appearance-none focus:outline-none">
                                 <option value="semua" class="text-black">Semua</option>
                                 <option value="lacak" class="text-black">Lacak Kiriman</option>
                                 <option value="peraturan" class="text-black">Peraturan</option>
@@ -49,12 +49,13 @@
                                 <option value="berita" class="text-black">Berita</option>
                             </select>
                         </div>
-                        <input type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
+                        <input id="dashboard-search-input" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
                         <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
                             <i data-lucide="search" class="w-5 h-5"></i>
                             <span>Cari</span>
                         </button>
                     </form>
+                    <div id="dashboard-search-results" class="mt-4 text-white hidden">Data belum tersedia</div>
                 </div>
 
                 <!-- Feature Cards -->
