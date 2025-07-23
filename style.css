@@ -51,10 +51,18 @@ body {
     transform: translateX(0);
 }
 
-/* Perbaikan untuk Celah Hover */
-.dropdown-menu {
-    margin-top: 0.5rem; /* Mengembalikan margin atas */
+/* Perbaikan Celah Hover Menu */
+#desktop-menu-items .group {
+    padding-bottom: 1rem;
+    margin-bottom: -1rem;
 }
+
+#desktop-menu-items .group .dropdown-menu {
+    margin-top: 0;
+}
+
+
+/* === Search Bar (Desktop) === */
 
 
 /* === Search Bar (Desktop) === */
