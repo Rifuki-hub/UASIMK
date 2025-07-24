@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="nav-link text-white/80 hover:text-white flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5"></i><span>Berita</span></a>
+                        <a href="berita.php" class="nav-link text-white/80 hover:text-white flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5"></i><span>Berita</span></a>
                     </div>
                     
                     <div id="search-container">
