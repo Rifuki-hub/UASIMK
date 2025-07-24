@@ -63,7 +63,7 @@
                 </div>
 
                 <!-- Accordion FAQ -->
-                <div class="max-w-3xl mx-auto space-y-4" id="faq-list">
+                <div class="max-w-3xl mx-auto" id="faq-list">
                     <details class="faq-item group" data-category="impor">
                         <summary class="faq-question">
                             <span>Bagaimana ketentuan impor barang untuk Pekerja Migran Indonesia (PMI)?</span>
