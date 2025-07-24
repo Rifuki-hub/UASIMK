@@ -68,15 +68,23 @@
                                         <li><a href="#" class="group/item">
                                                 <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Kiriman</div>
                                                 <p class="text-sm text-gray-500">Lacak Status Barang Kiriman Anda.</p>
-                                            </a></li>
+                                            </a>
+                                        </li>
                                         <li><a href="#" class="group/item">
                                                 <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Kalkulator Pabean</div>
                                                 <p class="text-sm text-gray-500">Hitung tarif dan pajak import.</p>
-                                            </a></li>
+                                            </a>
+                                        </li>
                                         <li><a href="#" class="group/item">
                                                 <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Tanya Jawab (FAQ)</div>
                                                 <p class="text-sm text-gray-500">Jawaban untuk pertanyaan umum.</p>
-                                            </a></li>
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 hover:text-blue-600"><a href="website.php">Website</a></div>
+                                                <p class="text-sm text-gray-500">Informasi website untuk anda.</p>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div>
@@ -114,11 +122,11 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Transparansi Publik</h3>
+                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Layanan Pengaduan</h3>
                                     <ul class="space-y-4">
                                         <li><a href="#" class="group/item">
                                                 <div class="font-semibold text-gray-800 hover:text-blue-600"><a href="PM-halaman-utama.php">Pengaduan Masyarakat</a></div>
-                                                <p class="text-sm text-gray-500">Ajukan pengaduan masyarakat online.</p>
+                                                <p class="text-sm text-gray-500">Ajukan pengaduan masyarakat secara online.</p>
                                             </a></li>
                                     </ul>
                                 </div>
