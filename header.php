@@ -29,7 +29,7 @@
             <div class="flex items-center gap-2">
                 <div class="hidden lg:flex items-center gap-4">
                     <div id="desktop-menu-items" class="flex items-center gap-6 text-sm font-medium">
-                        <a href="#" class="nav-link active flex items-center gap-2"><i data-lucide="home" class="w-5 h-5"></i><span>Beranda</span></a>
+                        <a href="dashboard.php" class="nav-link active flex items-center gap-2"><i data-lucide="home" class="w-5 h-5"></i><span>Beranda</span></a>
                         
                         <div class="relative group">
                             <button class="nav-link text-white/80 hover:text-white flex items-center gap-2">
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="berita.php" class="nav-link text-white/80 hover:text-white flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5"></i><span>Berita</span></a>
+                        <a href="media-center.php" class="nav-link text-white/80 hover:text-white flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5"></i><span>Informasi Publik</span></a>
                     </div>
                     
                     <div id="search-container">
