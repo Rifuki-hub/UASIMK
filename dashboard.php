@@ -42,8 +42,9 @@
                 <div class="mt-10 max-w-2xl mx-auto">
                     <form id="dashboard-search-form" action="search-results.php" method="GET" class="flex flex-col sm:flex-row gap-2 bg-white/10 p-2 rounded-full border border-white/20">
                         <input id="dashboard-search-input" name="keyword" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
-                        <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
+                        <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2 px-8">
                             <i data-lucide="search" class="w-5 h-5"></i>
+                            <span class="hidden sm:inline">Cari</span>
                         </button>
                     </form>
                 </div>
