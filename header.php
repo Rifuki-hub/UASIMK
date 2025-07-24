@@ -28,7 +28,7 @@
 
             <div id="desktop-menu-items" class="hidden lg:flex items-center gap-6 text-sm font-medium pl-[130px]">
                 <a href="loading.php" class="nav-link active flex items-center gap-2"><i data-lucide="home" class="w-5 h-5"></i><span>Beranda</span></a>
-                
+
                 <div class="relative group">
                     <button type="button" class="nav-link text-white/80 hover:text-white flex items-center gap-2">
                         <i data-lucide="user-circle" class="w-5 h-5"></i>
@@ -36,7 +36,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
                     </button>
                     <div class="dropdown-menu absolute top-full left-0 mt-2 w-60 bg-white rounded-md shadow-lg py-2 z-20">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Organisasi</a>
+                        <a href="about-us.php" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Organisasi</a>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kantor Bea dan Cukai</a>
                         <div class="relative group">
                             <a href="#" class="flex justify-between items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -62,14 +62,71 @@
                     <div class="dropdown-menu absolute top-full right-0 -mr-24 mt-2 w-[64rem] z-20">
                         <div class="bg-white rounded-md shadow-lg">
                             <div class="p-8 grid grid-cols-3 gap-12">
-                                <div><h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Untuk Anda</h3><ul class="space-y-4"><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Kiriman</div><p class="text-sm text-gray-500">Lacak Status Barang Kiriman Anda.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Kalkulator Pabean</div><p class="text-sm text-gray-500">Hitung tarif dan pajak import.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Tanya Jawab (FAQ)</div><p class="text-sm text-gray-500">Jawaban untuk pertanyaan umum.</p></a></li></ul></div>
-                                <div><h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Regulasi & Fasilitas</h3><ul class="space-y-4"><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Pabean</div><p class="text-sm text-gray-500">Aturan & prosedur impor-ekspor.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Cukai</div><p class="text-sm text-gray-500">Aturan & prosedur barang kena cukai.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Fasilitas</div><p class="text-sm text-gray-500">KITE, Kawasan Berikat, dan lainnya.</p></a></li></ul></div>
-                                <div><h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Transparansi Publik</h3><ul class="space-y-4"><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Permohonan Informasi Publik</div><p class="text-sm text-gray-500">Ajukan permintaan informasi resmi (PPID).</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Statistik</div><p class="text-sm text-gray-500">Data perdagangan, penerimaan, dan lainnya.</p></a></li><li><a href="#" class="group/item"><div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Publik</div><p class="text-sm text-gray-500">Informasi mengenai layanan publik kami.</p></a></li></ul></div>
+                                <div>
+                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Untuk Anda</h3>
+                                    <ul class="space-y-4">
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Kiriman</div>
+                                                <p class="text-sm text-gray-500">Lacak Status Barang Kiriman Anda.</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Kalkulator Pabean</div>
+                                                <p class="text-sm text-gray-500">Hitung tarif dan pajak import.</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Tanya Jawab (FAQ)</div>
+                                                <p class="text-sm text-gray-500">Jawaban untuk pertanyaan umum.</p>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Regulasi & Fasilitas</h3>
+                                    <ul class="space-y-4">
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Pabean</div>
+                                                <p class="text-sm text-gray-500">Aturan & prosedur impor-ekspor.</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600"><a href="indeks-cukai.php">Cukai</a></div>
+                                                <p class="text-sm text-gray-500">Aturan & prosedur barang kena cukai.</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Fasilitas</div>
+                                                <p class="text-sm text-gray-500">KITE, Kawasan Berikat, dan lainnya.</p>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Transparansi Publik</h3>
+                                    <ul class="space-y-4">
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Permohonan Informasi Publik</div>
+                                                <p class="text-sm text-gray-500">Ajukan permintaan informasi resmi (PPID).</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Statistik</div>
+                                                <p class="text-sm text-gray-500">Data perdagangan, penerimaan, dan lainnya.</p>
+                                            </a></li>
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 group-hover/item:text-blue-600">Layanan Publik</div>
+                                                <p class="text-sm text-gray-500">Informasi mengenai layanan publik kami.</p>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm uppercase text-gray-400 mb-4">Transparansi Publik</h3>
+                                    <ul class="space-y-4">
+                                        <li><a href="#" class="group/item">
+                                                <div class="font-semibold text-gray-800 hover:text-blue-600"><a href="PM-halaman-utama.php">Pengaduan Masyarakat</a></div>
+                                                <p class="text-sm text-gray-500">Ajukan pengaduan masyarakat online.</p>
+                                            </a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <a href="media-center.php" class="nav-link text-white/80 hover:text-white flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5"></i><span>Informasi Publik</span></a>
             </div>
 
@@ -77,7 +134,7 @@
                 <div id="search-container">
                     <form id="search-form" class="relative flex items-center" onsubmit="return document.getElementById('search-input').value.trim() !== ''">
                         <input type="text" id="search-input" placeholder="Cari informasi..."
-                               class="bg-white text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 h-10">
+                            class="bg-white text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 h-10">
                         <button id="search-toggle-button" type="button" class="nav-link p-2">
                             <i data-lucide="search" id="search-icon-open" class="w-5 h-5"></i>
                             <i data-lucide="x" id="search-icon-close" class="w-5 h-5 hidden"></i>
@@ -90,10 +147,10 @@
                 </button>
             </div>
         </div>
-    
+
         <div class="hidden lg:hidden absolute top-full left-0 w-full bg-[#0A2351] h-[calc(100vh-80px)] overflow-y-auto" id="mobile-menu">
             <div class="p-4 space-y-2">
-                 <a href="#" class="mobile-nav-link active flex items-center gap-4 p-3 rounded-md font-semibold">
+                <a href="#" class="mobile-nav-link active flex items-center gap-4 p-3 rounded-md font-semibold">
                     <i data-lucide="home" class="w-6 h-6"></i>
                     <span>Beranda</span>
                 </a>
@@ -106,7 +163,7 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
                     </summary>
                     <div class="mt-1 pl-10 space-y-1">
-                        <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Organisasi</a>
+                        <a href="about-us.php" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Organisasi</a>
                         <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Kantor Bea dan Cukai</a>
                         <details class="group/mobile">
                             <summary class="flex justify-between items-center p-2 rounded-md text-white/80 hover:bg-white/10 cursor-pointer">
@@ -125,8 +182,8 @@
                 <details class="group">
                     <summary class="flex items-center justify-between gap-4 p-3 rounded-md text-white/90 hover:bg-white/10 cursor-pointer">
                         <div class="flex items-center gap-4">
-                           <i data-lucide="file-text" class="w-6 h-6"></i>
-                           <span>Layanan & Panduan</span>
+                            <i data-lucide="file-text" class="w-6 h-6"></i>
+                            <span>Layanan & Panduan</span>
                         </div>
                         <i data-lucide="chevron-down" class="w-5 h-5 transition-transform group-open:rotate-180"></i>
                     </summary>
@@ -139,11 +196,11 @@
                                 <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Tanya Jawab (FAQ)</a>
                             </div>
                         </div>
-                         <div>
+                        <div>
                             <h3 class="px-4 py-1 text-yellow-400 font-bold text-sm">REGULASI & FASILITAS</h3>
                             <div class="pl-4 space-y-1">
                                 <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Pabean</a>
-                                <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Cukai</a>
+                                <a href="indeks-cukai.php" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Cukai</a>
                                 <a href="#" class="block p-2 rounded-md text-white/80 hover:bg-white/10">Fasilitas</a>
                             </div>
                         </div>
