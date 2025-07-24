@@ -38,7 +38,7 @@
 
         <!-- Page Header -->
         <section class="page-header">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center pt-10">
                 <h1 class="text-4xl font-bold text-[#0A2351] tracking-tight">Standar Layanan Publik Kami</h1>
                 <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Temukan informasi rinci mengenai berbagai layanan di bidang impor, ekspor, fasilitas kepabeanan, dan cukai yang kami sediakan.</p>
             </div>
