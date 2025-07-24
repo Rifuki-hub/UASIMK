@@ -3,20 +3,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
     const dashboardSearchForm = document.getElementById('dashboard-search-form');
     const dashboardSearchInput = document.getElementById('dashboard-search-input');
+    const dashboardSearchButton = dashboardSearchForm ? dashboardSearchForm.querySelector('button[type="submit"]') : null;
 
-    const handleSearch = function (event) {
-        event.preventDefault();
-        const keyword = this.querySelector('[name="keyword"]').value.trim();
-        if (keyword) {
-            window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
-        }
-    };
-
+    // Header search: submit on Enter key press
     if (searchForm) {
-        searchForm.addEventListener('submit', handleSearch);
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const keyword = searchInput.value.trim();
+            if (keyword) {
+                window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
+            }
+        });
     }
 
+    // Dashboard search: submit on Enter key press or button click
     if (dashboardSearchForm) {
-        dashboardSearchForm.addEventListener('submit', handleSearch);
+        dashboardSearchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const keyword = dashboardSearchInput.value.trim();
+            if (keyword) {
+                window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
+            }
+        });
     }
 });
