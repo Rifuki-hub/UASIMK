@@ -24,50 +24,61 @@ body {
     color: var(--color-accent);
 }
 
-/* === Dropdown Menu (KEMBALI KE KONTROL CSS) === */
+/* === Dropdown Menu === */
+.group {
+    position: relative;
+}
+
+.group:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 .dropdown-menu, .submenu {
     display: none;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.group::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1rem; /* Hover bridge */
+    z-index: 10;
+}
+
 .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
     transform: translateY(10px);
+    margin-top: 0.25rem;
 }
+
 .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 0.25rem;
     transform: translateX(10px);
+    display: none;
 }
 
-/* Aturan :hover untuk menampilkan menu */
-.group:hover > .dropdown-menu,
-.group\\/submenu:hover > .submenu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.group\\/submenu:hover > .submenu {
-    transform: translateX(0);
-}
-
-/* Aturan :hover untuk menampilkan menu */
-.group:hover > .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-.group\\/submenu:hover > .submenu {
+.group:hover > .dropdown-menu > .relative:hover > .submenu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
 }
-
-
-/* === Search Bar (Desktop) === */
-
 
 /* === Search Bar (Desktop) === */
 #desktop-menu-items {
@@ -76,7 +87,6 @@ body {
     opacity: 1;
     visibility: visible;
     white-space: nowrap;
-    /* overflow: hidden; <-- DIHAPUS DARI SINI AGAR DROPDOWN TIDAK TERPOTONG */
     margin-right: 0;
 }
 
@@ -93,20 +103,21 @@ body {
     color: white;
 }
 
-/* === Kondisi AKTIF: Saat #main-nav memiliki kelas .search-active === */
 #main-nav.search-active #desktop-menu-items {
     max-width: 0;
     opacity: 0;
     visibility: hidden;
     margin-right: 1rem;
-    overflow: hidden; /* <-- DIPINDAHKAN KE SINI, HANYA AKTIF SAAT SEARCH */
+    overflow: hidden;
 }
+
 #main-nav.search-active #search-input {
     width: 256px;
     opacity: 1;
     padding: 0.5rem 2.5rem 0.5rem 1rem;
     border-color: #D1D5DB;
 }
+
 #main-nav.search-active #search-toggle-button {
     position: absolute;
     right: 0;
@@ -115,39 +126,45 @@ body {
     color: #4B5563;
 }
 
-
 /* === Mobile Menu Styles === */
 .mobile-menu-item {
     @apply border-b border-white/10;
 }
+
 .mobile-menu-summary {
     @apply flex items-center gap-3 w-full py-3 text-left text-base font-medium text-white hover:bg-white/10 rounded-md px-3 cursor-pointer;
 }
+
 .mobile-menu-summary.active {
     @apply text-yellow-400 bg-white/10;
 }
+
 .mobile-menu-content {
     @apply pl-8 pr-4 pb-2 space-y-1;
 }
+
 .mobile-menu-heading {
     @apply text-yellow-400 font-semibold text-sm mt-2 mb-1;
 }
+
 .mobile-submenu-link {
     @apply block py-2 text-white/70 hover:text-white;
 }
 
 /* === Card Styles === */
-
 .feature-card-v2 {
     @apply bg-white/5 border border-white/10 rounded-lg p-6 text-center transition-all duration-300 ease-in-out transform hover:bg-white/10 hover:-translate-y-1;
 }
+
 .news-card {
     @apply card overflow-hidden;
     transition: box-shadow 0.3s;
 }
+
 .news-card:hover {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
 .commitment-bg {
     background: linear-gradient(to right, #f0f9ff, #e0f2fe);
 }
@@ -156,12 +173,15 @@ body {
 .kpi-card {
     @apply card p-6 card-interactive;
 }
+
 .kpi-icon {
     @apply w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0;
 }
+
 .kpi-title {
     @apply text-sm text-gray-500;
 }
+
 .kpi-value {
     @apply text-2xl font-bold text-gray-800;
 }
@@ -170,12 +190,15 @@ body {
 .apexcharts-tooltip {
     @apply bg-white border border-gray-200 shadow-lg rounded-lg;
 }
+
 .apexcharts-tooltip-title {
     @apply bg-gray-100 py-2 px-4 font-semibold text-gray-800;
 }
+
 .apexcharts-tooltip-series-group {
     @apply p-2;
 }
+
 .apexcharts-legend-text {
     @apply text-gray-600 !important;
 }
@@ -189,6 +212,7 @@ body {
 #results-section .timeline-item {
     @apply mb-10 ml-6;
 }
+
 #results-section .timeline-icon {
     @apply absolute flex items-center justify-center w-8 h-8 rounded-full -left-4 ring-8 ring-white;
 }
@@ -197,34 +221,15 @@ body {
 summary {
     list-style: none;
 }
+
 summary::-webkit-details-marker {
     display: none;
 }
+
 details > summary {
     list-style: none;
 }
+
 details > summary::-webkit-details-marker {
     display: none;
-}
-.mobile-menu-item { @apply border-b border-white/10; }
-.mobile-menu-summary { @apply flex items-center gap-3 w-full py-3 text-left text-base font-medium text-white hover:bg-white/10 rounded-md px-3 cursor-pointer; }
-summary { list-style: none; }
-summary::-webkit-details-marker { display: none; }
-
-.group {
-    position: relative;
-}
-.dropdown-menu {
-    pointer-events: none;
-}
-.group:hover .dropdown-menu {
-    pointer-events: auto;
-}
-
-/* Perluas area hover agar tidak ada gap */
-.group {
-    padding-bottom: 0.5rem; /* atau sesuaikan */
-}
-.dropdown-menu {
-    margin-top: 0.25rem; /* hilangkan jarak terlalu besar dari tombol */
 }

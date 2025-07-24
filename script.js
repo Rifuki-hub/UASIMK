@@ -39,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // --- TIDAK ADA LAGI LOGIKA MOUSEENTER/MOUSELEAVE UNTUK MENU DESKTOP ---
-    // CSS akan menanganinya sepenuhnya.
-
     // Menutup bar pencarian saat mengklik di luar
     document.addEventListener('click', function(event) {
         const searchContainer = document.getElementById('search-container');
