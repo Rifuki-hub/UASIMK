@@ -1,28 +1,42 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const searchContainer = document.getElementById('search-container');
     const searchForm = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
+    const searchToggleButton = document.getElementById('search-toggle-button');
+    const searchIconOpen = document.getElementById('search-icon-open');
+    const searchIconClose = document.getElementById('search-icon-close');
+
     const dashboardSearchForm = document.getElementById('dashboard-search-form');
     const dashboardSearchInput = document.getElementById('dashboard-search-input');
-    const dashboardSearchButton = dashboardSearchForm ? dashboardSearchForm.querySelector('button[type="submit"]') : null;
 
-    // Header search: submit on Enter key press
-    if (searchForm) {
-        searchForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const keyword = searchInput.value.trim();
-            if (keyword) {
-                window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
+    // Header search toggle
+    if (searchToggleButton) {
+        searchToggleButton.addEventListener('click', function () {
+            searchInput.classList.toggle('hidden');
+            searchIconOpen.classList.toggle('hidden');
+            searchIconClose.classList.toggle('hidden');
+            if (!searchInput.classList.contains('hidden')) {
+                searchInput.focus();
             }
         });
     }
 
-    // Dashboard search: submit on Enter key press or button click
+    // Header search submit on Enter
+    if (searchForm) {
+        searchForm.addEventListener('submit', function (event) {
+            const keyword = searchInput.value.trim();
+            if (!keyword) {
+                event.preventDefault();
+            }
+        });
+    }
+
+    // Dashboard search
     if (dashboardSearchForm) {
         dashboardSearchForm.addEventListener('submit', function (event) {
-            event.preventDefault();
             const keyword = dashboardSearchInput.value.trim();
-            if (keyword) {
-                window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
+            if (!keyword) {
+                event.preventDefault();
             }
         });
     }
