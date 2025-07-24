@@ -40,21 +40,12 @@
 
                 <!-- Search Bar -->
                 <div class="mt-10 max-w-2xl mx-auto">
-                    <form id="dashboard-search-form" class="flex flex-col sm:flex-row gap-2 bg-white/10 p-2 rounded-full border border-white/20">
-                        <div class="relative w-full sm:w-48">
-                            <select id="dashboard-search-category" class="w-full bg-transparent text-white pl-4 pr-8 py-3 rounded-full appearance-none focus:outline-none">
-                                <option value="semua" class="text-black">Semua</option>
-                                <option value="peraturan" class="text-black">Peraturan</option>
-                                <option value="kurs" class="text-black">Kurs Pajak</option>
-                                <option value="berita" class="text-black">Berita</option>
-                            </select>
-                        </div>
-                        <input id="dashboard-search-input" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
+                    <form id="dashboard-search-form" action="search-results.php" method="GET" class="flex flex-col sm:flex-row gap-2 bg-white/10 p-2 rounded-full border border-white/20">
+                        <input id="dashboard-search-input" name="keyword" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
                         <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
                             <i data-lucide="search" class="w-5 h-5"></i>
                         </button>
                     </form>
-                    <div id="dashboard-search-results" class="mt-4 text-white hidden">Data belum tersedia</div>
                 </div>
 
                 <!-- Feature Cards -->

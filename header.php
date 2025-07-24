@@ -75,12 +75,11 @@
 
             <div class="flex items-center gap-2">
                 <div id="search-container">
-                    <form id="search-form" class="relative flex items-center" onsubmit="return document.getElementById('search-input').value.trim() !== ''">
-                        <input type="text" id="search-input" placeholder="Cari informasi..."
+                    <form id="search-form" class="relative flex items-center" action="search-results.php" method="GET">
+                        <input type="text" id="search-input" name="keyword" placeholder="Cari informasi..."
                                class="bg-white text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 h-10">
-                        <button id="search-toggle-button" type="button" class="nav-link p-2">
+                        <button id="search-toggle-button" type="submit" class="nav-link p-2">
                             <i data-lucide="search" id="search-icon-open" class="w-5 h-5"></i>
-                            <i data-lucide="x" id="search-icon-close" class="w-5 h-5 hidden"></i>
                         </button>
                     </form>
                 </div>
