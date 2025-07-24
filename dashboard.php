@@ -29,7 +29,7 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-bg text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-32 text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
                     Mengawal Lalu Lintas Barang,<br>
                     <span class="highlight-yellow">Melayani Indonesia</span>
@@ -58,7 +58,7 @@
                 </div>
 
                 <!-- Feature Cards -->
-        <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <a href="lacak-kiriman.php" class="feature-card-v2">
                 <i data-lucide="package-search" class="w-12 h-12 mb-4 text-yellow-400"></i>
                 <h3 class="font-bold text-lg">Lacak Kiriman</h3>
@@ -148,11 +148,11 @@
                     </a>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="lg:col-span-2"><div class="news-card h-full flex flex-col"><img src="https://placehold.co/800x450/cccccc/4A4A4A?text=Berita+Utama" alt="Implementasi Sistem CEISA 4.0" class="w-full h-64 object-cover"><div class="p-6 flex-grow flex flex-col"><span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full self-start mb-3">FEATURED</span><p class="text-sm text-gray-500 mb-2">19 Juli 2025</p><h3 class="text-2xl font-bold text-gray-900">Implementasi Sistem CEISA 4.0 Meningkatkan Efisiensi Pelayanan</h3><p class="mt-3 text-gray-600 flex-grow">Sistem baru CEISA 4.0 berhasil mengurangi waktu proses clearance hingga 60% dan meningkatkan kepuasan pengguna jasa.</p><a href="#" class="mt-4 font-semibold text-[#0A2351] hover:text-yellow-500 self-start flex items-center gap-2">Baca Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div></div></div>
+                    <div class="lg:col-span-2"><div class="news-card h-full flex flex-col"><img src="ceisa4.png" alt="Implementasi Sistem CEISA 4.0" class="w-full h-64 object-cover"><div class="p-6 flex-grow flex flex-col"><span class="bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-full self-start mb-3">FEATURED</span><p class="text-sm text-gray-500 mb-2">19 Juli 2025</p><h3 class="text-2xl font-bold text-gray-900">Implementasi Sistem CEISA 4.0 Meningkatkan Efisiensi Pelayanan</h3><p class="mt-3 text-gray-600 flex-grow">Sistem baru CEISA 4.0 berhasil mengurangi waktu proses clearance hingga 60% dan meningkatkan kepuasan pengguna jasa.</p><a href="#" class="mt-4 font-semibold text-[#0A2351] hover:text-yellow-500 self-start flex items-center gap-2">Baca Selengkapnya <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div></div></div>
                     <div class="space-y-6">
-                        <a href="#" class="flex items-center gap-4 group"><img src="https://placehold.co/150x100/cccccc/4A4A4A?text=Info" alt="Kerjasama Internasional" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">18 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Kerjasama Internasional dalam Pemberantasan Narkoba</h4></div></a>
-                        <a href="#" class="flex items-center gap-4 group"><img src="https://placehold.co/150x100/cccccc/4A4A4A?text=Info" alt="Program Digitalisasi" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">17 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Program Digitalisasi Layanan Publik Raih Penghargaan</h4></div></a>
-                        <a href="#" class="flex items-center gap-4 group"><img src="https://placehold.co/150x100/cccccc/4A4A4A?text=Info" alt="Ekspor UKM" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">16 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Bea Cukai Permudah Prosedur Ekspor untuk Pelaku UKM</h4></div></a>
+                        <a href="#" class="flex items-center gap-4 group"><img src="kerjasama.png" alt="Kerjasama Internasional" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">18 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Kerjasama Internasional dalam Pemberantasan Narkoba</h4></div></a>
+                        <a href="#" class="flex items-center gap-4 group"><img src="program_digitalisasi.png" alt="Program Digitalisasi" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">17 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Program Digitalisasi Layanan Publik Raih Penghargaan</h4></div></a>
+                        <a href="#" class="flex items-center gap-4 group"><img src="ekspor_ukm.png" alt="Ekspor UKM" class="w-28 h-20 object-cover rounded-md flex-shrink-0"><div><p class="text-sm text-gray-500">16 Juli 2025</p><h4 class="font-semibold text-gray-800 group-hover:text-[#0A2351]">Bea Cukai Permudah Prosedur Ekspor untuk Pelaku UKM</h4></div></a>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
         <section class="py-16 sm:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="commitment-bg p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-shrink-0 text-center">
+                    <div class="flex-shrink-0 text-center mx-8">
                         <div class="bg-[#0A2351] rounded-full w-48 h-48 flex items-center justify-center mx-auto">
                             <i data-lucide="shield-check" class="w-24 h-24 text-yellow-400"></i>
                         </div>
@@ -198,10 +198,10 @@
                 <h2 class="text-3xl font-bold text-gray-800">Mengenal Unit Khusus Kami</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Tim-tim spesialis yang berdedikasi untuk menjaga keamanan dan kelancaran lalu lintas barang di Indonesia.</p>
                 <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="text-center group"><a href="#"><img src="https://placehold.co/200x200/0A2351/FACC15?text=CNT" alt="Customs Narcotics Team" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Customs Narcotics Team</h3></a></div>
-                    <div class="text-center group"><a href="#"><img src="https://placehold.co/200x200/0A2351/FACC15?text=K-9" alt="K-9 Unit" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">K-9 Unit</h3></a></div>
-                    <div class="text-center group"><a href="#"><img src="https://placehold.co/200x200/0A2351/FACC15?text=MC" alt="Marine Customs" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Marine Customs</h3></a></div>
-                    <div class="text-center group"><a href="#"><img src="https://placehold.co/200x200/0A2351/FACC15?text=CET" alt="Customs Enforcement Team" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Customs Enforcement Team</h3></a></div>
+                    <div class="text-center group"><a href="customnarcoticsteam.php"><img src="customsnarcoticsteam.png" alt="Customs Narcotics Team" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Customs Narcotics Team</h3></a></div>
+                    <div class="text-center group"><a href="k9unit.php"><img src="k9unit.png" alt="K-9 Unit" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">K-9 Unit</h3></a></div>
+                    <div class="text-center group"><a href="marinecustoms.php"><img src="marinecustoms.png" alt="Marine Customs" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Marine Customs</h3></a></div>
+                    <div class="text-center group"><a href="customsenforcementteam.php"><img src="cet.png" alt="Customs Enforcement Team" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg group-hover:scale-105 transition-transform"><h3 class="mt-4 font-semibold text-lg text-gray-800">Customs Enforcement Team</h3></a></div>
                 </div>
             </div>
         </section>
@@ -212,10 +212,10 @@
                 <h2 class="text-3xl font-bold text-gray-800">Tautan & Mitra Internasional</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Berkolaborasi dengan organisasi internasional untuk kemudahan perdagangan global.</p>
                 <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="https://placehold.co/200x80/CCCCCC/4A4A4A?text=APEC" alt="Logo APEC" class="h-12 mx-auto"></a>
-                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="https://placehold.co/200x80/CCCCCC/4A4A4A?text=ASEAN+Tariff" alt="Logo ASEAN Tariff Finder" class="h-12 mx-auto"></a>
-                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="https://placehold.co/200x80/CCCCCC/4A4A4A?text=INSW" alt="Logo INSW" class="h-12 mx-auto"></a>
-                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="https://placehold.co/200x80/CCCCCC/4A4A4A?text=WCO" alt="Logo World Customs Organization" class="h-12 mx-auto"></a>
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="apec.png" alt="Logo APEC" class="h-12 mx-auto"></a>
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="asean.png" alt="Logo ASEAN Tariff Finder" class="h-12 mx-auto"></a>
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="eria.png" alt="Logo ERIA" class="h-12 mx-auto"></a>
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border"><img src="wco.png" alt="Logo World Customs Organization" class="h-12 mx-auto"></a>
                 </div>
             </div>
         </section>
