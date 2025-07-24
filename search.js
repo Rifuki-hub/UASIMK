@@ -1,15 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const searchContainer = document.getElementById('search-container');
-    const searchForm = document.getElementById('search-form');
-    const searchInput = document.getElementById('search-input');
     const searchToggleButton = document.getElementById('search-toggle-button');
+    const searchInput = document.getElementById('search-input');
     const searchIconOpen = document.getElementById('search-icon-open');
     const searchIconClose = document.getElementById('search-icon-close');
+    const searchForm = document.getElementById('search-form');
 
-    const dashboardSearchForm = document.getElementById('dashboard-search-form');
-    const dashboardSearchInput = document.getElementById('dashboard-search-input');
-
-    // Header search toggle
     if (searchToggleButton) {
         searchToggleButton.addEventListener('click', function () {
             searchInput.classList.toggle('hidden');
@@ -21,23 +16,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Header search submit on Enter
     if (searchForm) {
         searchForm.addEventListener('submit', function (event) {
             const keyword = searchInput.value.trim();
-            if (!keyword) {
+            if (keyword === '') {
                 event.preventDefault();
             }
         });
     }
 
-    // Dashboard search
+    const dashboardSearchForm = document.getElementById('dashboard-search-form');
     if (dashboardSearchForm) {
-        dashboardSearchForm.addEventListener('submit', function (event) {
-            const keyword = dashboardSearchInput.value.trim();
-            if (!keyword) {
-                event.preventDefault();
+        dashboardSearchForm.addEventListener('submit', function(event) {
+            const keyword = document.getElementById('dashboard-search-input').value.trim();
+            if (keyword) {
+                window.location.href = `search-results.php?keyword=${encodeURIComponent(keyword)}`;
             }
+            event.preventDefault();
         });
     }
 });
