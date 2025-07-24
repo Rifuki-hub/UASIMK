@@ -49,31 +49,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Logika pencarian di dashboard (tidak berubah)
-    const dashboardSearchForm = document.getElementById('dashboard-search-form');
-    const dashboardSearchInput = document.getElementById('dashboard-search-input');
-    const dashboardSearchResults = document.getElementById('dashboard-search-results');
 
-    if (dashboardSearchForm) {
-        dashboardSearchForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (dashboardSearchInput.value.trim() !== '') {
-                if (dashboardSearchResults) {
-                    dashboardSearchResults.classList.remove('hidden');
-                }
-            } else {
-                if (dashboardSearchResults) {
-                    dashboardSearchResults.classList.add('hidden');
-                }
-            }
-        });
-
-        dashboardSearchInput.addEventListener('input', function () {
-            if (this.value.trim() === '') {
-                if (dashboardSearchResults) {
-                    dashboardSearchResults.classList.add('hidden');
-                }
-            }
-        });
-    }
 });
