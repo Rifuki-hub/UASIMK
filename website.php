@@ -28,7 +28,7 @@
                     <h1 class="text-[22px] font-semibold">Website</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -42,25 +42,25 @@
                     <aside class="w-full md:w-1/4">
                         <ul class="rounded-lg overflow-hidden shadow-sm">
                             <li class="bg-[#0A2351] text-white font-semibold">
-                                <a href="#" class="block py-3 px-4">Website</a>
+                                <a href="website.php" class="block py-3 px-4">Website</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">-</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">-</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Kegiatan -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Tentang Website</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Tentang Website</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Pengumuman -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Privacy Statement</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Privacy Statement</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Term of Use</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Term of Use</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Disclaimer</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Disclaimer</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Site Map</a>
+                                <a href="website.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Site Map</a>
                             </li>
                         </ul>
                     </aside>

@@ -28,7 +28,7 @@
                     <h1 class="text-[22px] font-semibold">Indeks Cukai</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -45,7 +45,7 @@
                                 <a href="#" class="block py-3 px-4">Indeks Cukai</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Cukai</a>
+                                <a href="indeks-cukai.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Cukai</a>
                             </li>
                         </ul>
                     </aside>
@@ -53,7 +53,7 @@
                     <section class="w-full md:w-3/4">
                         <div class="bg-white p-6 rounded-lg shadow-sm">
                             <h2 class="text-2xl font-bold text-[#0A2351] mb-4">
-                                <a href="<!-- LINK: Article Detail Page -->" class="hover:underline">
+                                <a href="indeks-cukai.php" class="hover:underline">
                                     Cukai
                                 </a>
                             </h2>

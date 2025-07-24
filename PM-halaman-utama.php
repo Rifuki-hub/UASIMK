@@ -28,7 +28,7 @@
                     <h1 class="text-[22px] font-semibold">Pengaduan Masyarakat</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -42,7 +42,7 @@
                     <aside class="w-full md:w-1/4">
                         <ul class="rounded-lg overflow-hidden shadow-sm">
                             <li class="bg-[#0A2351] text-white font-semibold">
-                                <a href="#" class="block py-3 px-4">Pengaduan Masyarakat</a>
+                                <a href="PM-halaman-utama.php" class="block py-3 px-4">Pengaduan Masyarakat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
                                 <a href="PM-halaman-utama.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Halaman Utama</a>
@@ -62,7 +62,7 @@
                     <section class="w-full md:w-3/4">
                         <div class="bg-white p-6 rounded-lg shadow-sm">
                             <h2 class="text-2xl font-bold text-[#0A2351] mb-4">
-                                <a href="<!-- LINK: Article Detail Page -->" class="hover:underline">
+                                <a href="PM-halaman-utama.php" class="hover:underline">
                                     Pusat Pengaduan Masyarakat
                                 </a>
                             </h2>
@@ -81,7 +81,7 @@
                                 <div class="mt-2 space-y-2 text-justify">
                                     <p>
                                         Anda dapat menyampaikan pengaduan secara online melalui website DJBC
-                                        <a href="http://www.beacukai.go.id/pengaduan.html" class="text-blue-600 underline" target="_blank">
+                                        <a href="PM-rekam-pengaduan.php" class="text-blue-600 underline" target="_blank">
                                             http://www.beacukai.go.id/pengaduan.html
                                         </a>
                                     </p>

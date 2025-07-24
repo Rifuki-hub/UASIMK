@@ -28,7 +28,7 @@
                     <h1 class="text-[22px] font-semibold">Layanan Informasi Publik</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -42,37 +42,37 @@
                     <aside class="w-full md:w-1/4">
                         <ul class="rounded-lg overflow-hidden shadow-sm">
                             <li class="bg-[#0A2351] text-white font-semibold">
-                                <a href="#" class="block py-3 px-4">Layanan Informasi Publik</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4">Layanan Informasi Publik</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Tugas, Fungsi dan Kewenangan</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Tugas, Fungsi dan Kewenangan</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Kegiatan -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Halaman Utama PPID</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Halaman Utama PPID</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Pengumuman -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Komitmen DJBC</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Komitmen DJBC</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Regulasi</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Regulasi</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Profil</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Profil</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Permintaan Informasi</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Permintaan Informasi</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Informasi Publik Wajib Berkala</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Informasi Publik Wajib Berkala</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Informasi Publik Wajib Serta Merta</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Informasi Publik Wajib Serta Merta</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">informasi Publik Tersedia Setiap Saat</a>
+                                <a href="layanan-informasi-publik.php" class="block py-3 px-4 text-[#0A2351] hover:underline">informasi Publik Tersedia Setiap Saat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Berita -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Statistik Layanan Informasi</a>
+                                <a href="layanan-informasi-publik.php class=" block py-3 px-4 text-[#0A2351] hover:underline">Statistik Layanan Informasi</a>
                             </li>
                         </ul>
                     </aside>
@@ -80,7 +80,7 @@
                     <section class="w-full md:w-3/4">
                         <div class="bg-white p-6 rounded-lg shadow-sm">
                             <h2 class="text-2xl font-bold text-[#0A2351] mb-4">
-                                <a href="halaman-utama-ppid.html" class="hover:underline">
+                                <a href="layanan-informasi-publik.php" class="hover:underline">
                                     Halaman Utama PPID
                                 </a>
                             </h2>

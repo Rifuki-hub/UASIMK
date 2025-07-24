@@ -28,7 +28,7 @@
                     <h1 class="text-[22px] font-semibold">About Us</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
@@ -42,34 +42,34 @@
                     <aside class="w-full md:w-1/4">
                         <ul class="rounded-lg overflow-hidden shadow-sm">
                             <li class="bg-[#0A2351] text-white font-semibold">
-                                <a href="#" class="block py-3 px-4">About Us</a>
+                                <a href="about-us.php" class="block py-3 px-4">About Us</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Struktur Organisasi -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Struktur Organisasi</a>
+                                <a href="about-us.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Struktur Organisasi</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Sejarah -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Sejarah Bea dan Cukai</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Sejarah Bea dan Cukai</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Pengumuman -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Video Profil Direktorat</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Video Profil Direktorat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Kode Etik Direktorat</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Kode Etik Direktorat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Logo Direktorat</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Logo Direktorat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Mars Direktorat</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Mars Direktorat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Sekilas Direktorat</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Sekilas Direktorat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Tugas Pokok dan Fungsi</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Tugas Pokok dan Fungsi</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
-                                <a href="<!-- LINK: Download -->" class="block py-3 px-4 text-[#0A2351] hover:underline">Visi, Misi, dan Fungsi Utama</a>
+                                <a href="about-us.php"" class=" block py-3 px-4 text-[#0A2351] hover:underline">Visi, Misi, dan Fungsi Utama</a>
                             </li>
                         </ul>
                     </aside>
@@ -78,7 +78,7 @@
                         <div class="bg-white p-6 rounded-lg shadow-sm">
                             <!-- Judul -->
                             <h2 class="text-2xl font-bold text-[#0A2351] mb-4">
-                                <a href="<!-- LINK: Article Detail Page -->" class="hover:underline">
+                                <a href="about-us.php"" class=" hover:underline">
                                     Struktur Organisasi
                                 </a>
                             </h2>

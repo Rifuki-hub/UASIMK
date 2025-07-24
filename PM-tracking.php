@@ -28,12 +28,12 @@
                     <h1 class="text-[22px] font-semibold">Pengaduan Masyarakat</h1>
                     <ul class="breadcrumb flex space-x-3 text-sm text-white/80">
                         <li>
-                            <a href="<!-- LINK: Homepage -->" class="hover:underline flex items-center gap-1">
+                            <a href="dashboard.php" class="hover:underline flex items-center gap-1">
                                 <i class="fa fa-home"></i> Home
                             </a>
                         </li>
                         <li>
-                            <a href="<!-- LINK: Berita Page -->" class="hover:underline">Pengaduan</a>
+                            <a href="PM-halaman-utama.php" class="hover:underline">Pengaduan</a>
                         </li>
                         <li class="text-white">Tracking</li>
                     </ul>
@@ -45,7 +45,7 @@
                     <aside class="w-full md:w-1/4">
                         <ul class="rounded-lg overflow-hidden shadow-sm">
                             <li class="bg-[#0A2351] text-white font-semibold">
-                                <a href="#" class="block py-3 px-4">Pengaduan Masyarakat</a>
+                                <a href="PM-halaman-utama.php" class="block py-3 px-4">Pengaduan Masyarakat</a>
                             </li>
                             <li class="bg-white hover:bg-blue-50 border-b border-gray-200">
                                 <a href="PM-halaman-utama.php" class="block py-3 px-4 text-[#0A2351] hover:underline">Halaman Utama</a>
@@ -65,10 +65,10 @@
                     <section class="w-full md:w-3/4">
                         <div class="bg-white p-6 rounded-lg shadow-sm">
                             <h2 class="text-2xl font-bold text-[#0A2351] mb-4">
-                                <a href="#" class="hover:underline">Tracking Data Pengaduan</a>
+                                <a href="PM-tracking.php" class="hover:underline">Tracking Data Pengaduan</a>
                             </h2>
 
-                            <form id="tracking-form" class="prose prose-blue max-w-none text-gray-800 space-y-6">
+                            <form id="tracking-form" data-confirm="true" data-confirm-message="Anda yakin ingin mengirim permintaan ini?" data-submit-delay="1000" data-success-message="Hasil tracking berhasil dikirim lewat email!" class="prose prose-blue max-w-none text-gray-800 space-y-6">
                                 <p class="text-base">
                                     Pernah mengirimkan pengaduan? Masukkan nomor tiket Anda untuk melakukan tracking data
                                     dan/atau mengirimkan pengaduan lanjutan!
@@ -109,6 +109,7 @@
     <?php include 'footer.php'; ?>
 
     <script src="script.js" defer></script>
+    <script src="submit-form.js" defer></script>
 </body>
 
 </html>
