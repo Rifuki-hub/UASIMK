@@ -4,25 +4,17 @@
     <meta charset="UTF-8">
     <title>Hasil Pencarian - Bea Cukai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com  "></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400  ;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest  "></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 
-        <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com  "></script>
+<!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com  ">
-    <link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400  ;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest  "></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -31,7 +23,7 @@
     <script src="script.js"></script>
 </head>
 
-<body class="bg-slate-100 text-slate-800">
+<body class="bg-gray-50">
 
     <?php include 'header.php'; ?>
 
@@ -42,7 +34,7 @@
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow-lg mb-10">
-            <form id="search-form" class="flex flex-col sm:flex-row items-center gap-4">
+            <form id="search-form-result" class="flex flex-col sm:flex-row items-center gap-4">
                 <div class="relative w-full flex-grow">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
@@ -93,7 +85,7 @@
         const resultsContainer = document.getElementById('search-results-container');
         const resultsHeader = document.getElementById('search-results-header');
         const resultsDiv = document.getElementById('search-results');
-        const searchForm = document.getElementById('search-form');
+        const searchForm = document.getElementById('search-form-result');
         const searchInput = document.getElementById('page-search-input');
         const categorySelect = document.getElementById('search-category');
 
