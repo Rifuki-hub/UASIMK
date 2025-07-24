@@ -27,7 +27,20 @@
 
     <?php include 'header.php'; ?>
 
-    <main class="max-w-4xl mx-auto py-12 px-4">
+    <main>
+    <!-- Bagian Breadcrumb dan Judul Halaman -->
+        <section class="bg-gray-100 py-4 border-b">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <nav class="flex items-center text-sm text-gray-500" aria-label="Breadcrumb">
+                    <ol class="flex items-center space-x-2">
+                        <li><a href="#" class="hover:text-gray-700 flex items-center gap-1"><i data-lucide="home" class="w-4 h-4"></i> Beranda</a></li>
+                        <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+                        <li class="font-semibold text-gray-800" aria-current="page">Pencarian</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+    <div class="max-w-4xl mx-auto py-12 px-4">
         <div class="text-center mb-8">
             <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Pencarian Informasi</h2>
             <p class="mt-2 text-lg text-slate-600">Temukan peraturan, kurs pajak, dan berita terbaru.</p>
@@ -63,6 +76,7 @@
             <div id="search-results-header"></div>
             <div id="search-results" class="space-y-4"></div>
         </div>
+    </div>
     </main>
 
     <?php include 'footer.php'; ?>
