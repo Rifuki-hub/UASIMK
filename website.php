@@ -86,6 +86,10 @@
             </div>
         </div>
     </main>
+
+    <?php include 'footer.php'; ?>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
