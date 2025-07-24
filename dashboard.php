@@ -50,7 +50,7 @@
                                 </select>
                             </div>
                             <input name="q" type="text" placeholder="Ketik kata kunci di sini..." class="flex-grow bg-transparent py-3 px-4 placeholder-white/50 focus:outline-none">
-                            <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2">
+                            <button type="submit" class="btn btn-primary rounded-full flex items-center justify-center gap-2 px-4">
                                 <i data-lucide="search" class="w-5 h-5"></i>
                             </button>
                         </form>

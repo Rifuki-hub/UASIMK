@@ -80,7 +80,7 @@
                                 <button type="button" id="clear-button" class="btn btn-outline w-full sm:w-auto">
                                     Bersihkan
                                 </button>
-                                <button type="submit" class="btn btn-secondary w-full sm:w-auto flex items-center justify-center gap-2">
+                                <button type="submit" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#0A2351] text-white px-4 py-2 rounded-md hover:bg-[#091B41] transition">
                                     <i data-lucide="search" class="w-5 h-5"></i>
                                     Lacak Kiriman
                                 </button>
