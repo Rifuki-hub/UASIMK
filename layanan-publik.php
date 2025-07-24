@@ -83,8 +83,8 @@
                     <div class="info-card-maklumat">
                         <div class="info-icon bg-white/20 text-white"><i data-lucide="file-text"></i></div>
                         <div>
-                            <h2 class="info-title-maklumat">Maklumat Pelayanan</h2>
-                            <p class="info-text-maklumat">"Dengan ini, kami menyatakan sanggup menyelenggarakan pelayanan sesuai standar pelayanan yang telah ditetapkan dan apabila tidak menepati janji ini, kami siap menerima sanksi sesuai peraturan perundang-undangan yang berlaku."</p>
+                            <h2 class="info-title-maklumat !text-3xl font-bold text-[#0A2351] tracking-tight">Maklumat Pelayanan</h2>
+                            <p class="info-text-maklumat mt-4">"Dengan ini, kami menyatakan sanggup menyelenggarakan pelayanan sesuai standar pelayanan yang telah ditetapkan dan apabila tidak menepati janji ini, kami siap menerima sanksi sesuai peraturan perundang-undangan yang berlaku."</p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
     <?php include 'footer.php'; ?>
 
     <div id="service-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-lg p-6 relative">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl p-6 relative">
             <button id="close-modal-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
